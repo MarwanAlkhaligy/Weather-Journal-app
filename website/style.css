@@ -1,0 +1,168 @@
+body{
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif; 
+    background: linear-gradient(-45deg, #ffccd5, #cbf3f0,#23A6D5, #23D5AB);
+    height: 97.9vh;
+    background-size: 400%, 400%;
+    position: relative;
+    animation: change 10s ease-in-out infinite;
+}
+@keyframes change{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+#app{
+    max-width: 500px;
+    height: 97vh;
+    margin: auto;
+    background: url('Images/clouds.jpg');
+    background-size: cover;
+    font-family: 'Oswald', sans-serif;
+    padding: 0;
+    
+}
+
+.holder {
+    text-align: center;
+    font-size: 26px;
+    color:#166088;
+    
+    
+}
+#error-message {
+    color: #D8000C;
+    font-size: 13px;
+    font-family: Helvetica, Arial, sans-serif;
+    text-align: center;
+    height: 10px;
+    font-weight: bold;
+    text-shadow: 1px 1px rgba(250,250,250,.3);
+    margin-left: 20%; 
+}
+
+.entry{
+    display: block;
+}
+#entryHolder{
+    background: rgba(59, 74, 107, .4);
+    margin-left:9%;
+    width: 55vh;
+    height: 17vh;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;  
+}
+.box {
+    height: 50px;
+    width: 100%;
+}
+#date{
+    text-align: left;
+    margin-left: 10px;
+    font-size: 0.7em;
+}
+
+#temp {
+    text-align: left;
+    margin-left: 10px;
+    width: 98%;
+    font-size: 1.2em;
+    color: white;
+}
+#content{  
+    text-align: left;
+    font-size: 0.7em;
+    margin-left: 10px; 
+}
+
+.headline {
+    color: #0fa3b1;
+    border: 2px 4px 5px #070707;
+    font-size: 3.5em;
+}
+.title{
+    color :#fb8500;
+    margin-right: 45%;
+    
+}
+
+/*  Basic Styling To Override Default For Basic HTML Elements */
+label {
+    font-family: 'Jazz LET', fantasy; 
+    font-size: 20px; 
+    margin-right: 40%;
+}
+.zip label {
+    margin-right: 45%;
+}
+input {
+    display:block;
+    background:#b5e2fa7c;
+    color: #ff8811;
+    height: 40px;
+    width: 320px;
+    border: none;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    margin-left: 8.5%;
+}
+
+button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 60px;
+    background: #0fa3b1;
+    color: #f9f7f3;
+    font-family: 'Oswald', sans-serif;
+    font-size: 26px;
+    border: none;
+    box-shadow: 2px 4px 5px #444;
+    border-radius: 2em;
+}
+h1{
+    font-size: 32px;
+}
+
+textarea {
+    background:#b5e2fa7c;
+    color: #ff8811;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    border: none;
+}
+/* Reset style for HTML element on active to have no border*/
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+/* Style for Placeholder Text*/
+::placeholder { /* Firefox, Chrome, Opera */ 
+     color: #ff8811; 
+    font-family: 'Oswald', sans-serif;
+
+} 
+  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */ 
+    color: #ff8811; 
+    font-family: 'Oswald', sans-serif; 
+
+} 
+  
+::-ms-input-placeholder { /* Microsoft Edge */ 
+    color: #ff8811; 
+    font-family: 'Oswald', sans-serif; 
+
+} 
